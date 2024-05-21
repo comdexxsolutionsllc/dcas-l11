@@ -6,9 +6,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "laravel/cashier": "^15.3",
         "laravel/framework": "^11.0",
+        "laravel/pennant": "^1.7",
+        "laravel/prompts": "^0.1.21",
+        "laravel/pulse": "^1.1",
         "laravel/reverb": "@beta",
         "laravel/sanctum": "^4.0",
+        "laravel/telescope": "^5.0",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.4",
         "livewire/volt": "^1.0"
@@ -16,6 +21,8 @@
     "require-dev": {
         "fakerphp/faker": "^1.23",
         "laravel/breeze": "^2.0",
+        "laravel/dusk": "^8.2",
+        "laravel/envoy": "^2.9",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
@@ -55,7 +62,9 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "laravel/telescope"
+            ]
         }
     },
     "config": {
